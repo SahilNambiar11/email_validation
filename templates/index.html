@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Email Verifier</title>
+    <meta charset="UTF-8">
+    <title>Email Verification</title>
 </head>
 <body>
-    <h1>Email Verification</h1>
+    <h1>FastAPI Email Verification</h1>
     <form action="/send" method="post">
-        <input type="email" name="email" placeholder="Enter email" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
         <button type="submit">Verify & Send Email</button>
     </form>
-    {% if result %}
-        <p>{{ result }}</p>
-    {% endif %}
+    <p>{{ result }}</p>
 </body>
 </html>

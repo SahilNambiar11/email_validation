@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Verifier</title>
+</head>
+<body>
+    <h1>Email Verification</h1>
+    <form action="/send" method="post">
+        <input type="email" name="email" placeholder="Enter email" required>
+        <button type="submit">Verify & Send Email</button>
+    </form>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
